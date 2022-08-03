@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --primary-color: #5c6b7a;
+  --secondary-font: "Cinzel", serif;
+  --seconday-color: #303131;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  font-family: var(--primary-font);
+}
+
+header {
+  top: 0px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background-color: white !important;
+}
+
+header nav {
+  width: 90%;
+}
+
+header .bg-light {
+  background-color: white !important;
+}
+
+header nav .collapse {
+  flex-direction: row-reverse;
+}
+
+header nav .navbar-brand {
+  font-size: 26px;
+  font-weight: 300;
+  font-family: var(--secondary-font);
+  color: var(--seconday-color);
+  letter-spacing: 0.3em;
+}
+
+header nav .navbar-brand:hover,
+header nav ul li a:hover,
+header nav ul li .active {
+  color: var(--primary-color);
+}
+
+header nav ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--seconday-color);
+}
+
+header nav ul {
+  gap: 20px;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  margin: 65px 0px 25px;
+}
+
+main section {
+  width: 90%;
+}
+
+main .banner {
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://static.wixstatic.com/media/f61af8_97a68d95c3584eee8952b7b3184f5f80~mv2_d_6924_3840_s_4_2.jpg/v1/fill/w_1665,h_900,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f61af8_97a68d95c3584eee8952b7b3184f5f80~mv2_d_6924_3840_s_4_2.jpg");
+  position: relative;
+}
+
+main .banner .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(39, 58, 78, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .banner .overlay div h1 {
+  font-size: 70px;
+  font-weight: 300;
+  font-family: var(--secondary-font);
+  letter-spacing: 0.1em;
+  color: white;
+  margin: 0px;
+  text-align: center;
+}
+
+main .banner .overlay div h3 {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.6em;
+  color: white;
+  text-align: center;
+}
+
+main .banner .overlay div div button,
+main .portfolio .bottom button {
+  margin-top: 25px;
+  width: 142px;
+  height: 40px;
+  color: white;
+  font-weight: 300;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+main .banner .overlay div div button:hover,
+main .portfolio .bottom button:hover {
+  border: 0px;
+  background-color: #273a4e;
+  transition: 1s all;
+}
+
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 15px;
+}
+
+footer .top ul {
+  width: fit-content;
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+  gap: 25px;
+}
+
+footer .top ul li a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+footer .bottom p {
+  text-align: center;
+  font-size: 16px;
+  color: black;
+}
+
+.chat {
+  position: fixed;
+  right: 25px;
+  bottom: 20px;
+  background-color: rgb(176, 135, 156);
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.chat i {
+  font-size: 25px;
+  color: white;
+}
+
+main .portfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+main .portfolio .header-text {
+  font-size: 40px;
+  font-weight: 300;
+  font-family: var(--secondary-font);
+  color: var(--seconday-color);
+  text-align: center;
+}
+
+main .portfolio .bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+}
+
+main .portfolio .bottom aside {
+  width: 100%;
+  height: 869px;
+  position: relative;
+  background-image: url("https://static.wixstatic.com/media/f61af8_2ef1fc57fdd849a19df076e8fb6e036f~mv2_d_2681_2546_s_4_2.jpg/v1/fill/w_557,h_869,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f61af8_2ef1fc57fdd849a19df076e8fb6e036f~mv2_d_2681_2546_s_4_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .portfolio .bottom aside .overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(39, 58, 78, 0.3);
+}
+
+main .portfolio .bottom aside .overlay h3 {
+  color: white;
+  margin-top: 60px;
+}
+
+main .portfolio .bottom .middle {
+  background-image: url("https://static.wixstatic.com/media/f61af8_0865ef003a1740f9b703014d3b57e3fa~mv2_d_4928_3264_s_4_2.jpg/v1/fill/w_542,h_869,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f61af8_0865ef003a1740f9b703014d3b57e3fa~mv2_d_4928_3264_s_4_2.jpg");
+}
+
+main .portfolio .bottom .right {
+  background-image: url("https://static.wixstatic.com/media/f61af8_0ecca2bc73f444c98e8de071bb2ce81c~mv2_d_1927_1272_s_2.jpg/v1/fill/w_544,h_869,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f61af8_0ecca2bc73f444c98e8de071bb2ce81c~mv2_d_1927_1272_s_2.jpg");
+}
+
+.photo{
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: whitesmoke;
+}
+
+.photo .left img{
+  display: block;
+  margin-left: 90px;
+  margin-right: 10px;
+  width: 90%;
+}
+
+main.right{
+  font-family: var(--primary-font);
+  
+}
+
+main .right .beka{
+  text-align: left;
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+}
+
+main .right .beka1{
+  width: 450px;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+main .right .beka2{
+  width: 450px;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+main .right .beka3{
+  text-align: left;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 0.05em; 
+  margin-top: 50px;
+}
+
+main .right .beka4{
+  width: 450px;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+main .right .beka5{
+  text-align: left;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 0.05em; 
+  margin-top: 50px;
+}
+
+main .right .beka6{
+  width: 450px;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: left;
+}
